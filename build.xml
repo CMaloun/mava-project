@@ -9,7 +9,7 @@
             depends="prepare,vendors,parameters,lint,phploc,pdepend,phpcpd,phpmd-ci,phpcs-ci,phpdoc,phpunit,phpcb"/>-->
 
     <target name="build"
-            depends="prepare"/>
+            depends="prepare,vendors"/>
 
     <target name="build-parallel" depends="prepare,lint,tools-parallel,phpunit,phpcb"/>
 
