@@ -26,10 +26,12 @@ class DefaultController extends Controller
      */
     public function aboutAction($name)
     {
+        $user = null;
         if ($name) {
             $user = $this->getDoctrine()
                 ->getRepository('AppBundle:User')
                 ->findOneBy(array('name'=>$name));
+
             if (false === $user instanceof User) {
                 throw $this->createNotFoundException(
                     'No user named '.$name.' found!'
