@@ -11,10 +11,6 @@ class DefaultControllerCest
     {
     }
 
-    // tests
-    public function tryToTest(FunctionalTester $I)
-    {
-    }
 
     public function indexActionTest(FunctionalTester $I)
     {

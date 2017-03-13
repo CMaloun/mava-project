@@ -6,5 +6,12 @@ namespace Helper;
 
 class Unit extends \Codeception\Module
 {
-
+    public function seeResponseContains($text)
+    {
+        $this->assertContains(
+            $text,
+            $this->getModule('Symfony')->_getResponseContent(),
+            "response contains"
+        );
+    }
 }

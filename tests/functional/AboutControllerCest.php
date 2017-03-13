@@ -11,8 +11,4 @@ class AboutControllerCest
     {
     }
 
-    // tests
-    public function tryToTest(FunctionalTester $I)
-    {
-    }
 }
